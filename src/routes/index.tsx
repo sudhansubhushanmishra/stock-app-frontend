@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { StockDetails } from "../components/stock-details";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -6,8 +7,9 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <div className="p-2">
-      <h3>HomePage</h3>
-    </div>
+    <main>
+      <h1 className="text-3xl font-bold p-2 text-center">Stock App</h1>
+      <StockDetails />
+    </main>
   );
 }

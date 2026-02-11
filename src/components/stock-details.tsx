@@ -1,8 +1,8 @@
 export function StockDetails() {
   return (
-    <div className="w-4/5 flex flex-col place-items-center border border-stone-400 rounded-2xl">
+    <div className="p-4 w-4/5 flex flex-col mx-auto border border-stone-400 rounded-2xl">
       <form>
-        <div className="flex gap-8 p-4">
+        <div className="flex justify-center gap-8 p-4">
           <input
             type="text"
             id="stockSymbol"
@@ -13,7 +13,7 @@ export function StockDetails() {
           <button>Get Details</button>
         </div>
       </form>
-      <div>
+      <div className="text-left">
         <h2 className="text-2xl font-bold">Stock: AAPL</h2>
         <hr />
         <h2 className="text-2xl font-bold">Price: $185.20</h2>
